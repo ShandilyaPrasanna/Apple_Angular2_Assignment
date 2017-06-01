@@ -10,11 +10,8 @@ export class SearchPipe implements PipeTransform{
 	{
 		return users;
 	}
-	
+
 	console.log(users,value);
 	return(users.filter(function(user){
-		return(user.name.toLowerCase().includes(value.toLowerCase());
-	}));
-
-
-}
+		return(user.name.toLowerCase().includes(value.toLowerCase()));
+	}));}}
