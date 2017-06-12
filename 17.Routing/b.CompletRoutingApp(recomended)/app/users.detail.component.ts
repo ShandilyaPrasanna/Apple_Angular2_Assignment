@@ -26,3 +26,4 @@ import { ActivatedRoute,Params } from '@angular/router';
         this.det=detail;
           })
         }
+      }

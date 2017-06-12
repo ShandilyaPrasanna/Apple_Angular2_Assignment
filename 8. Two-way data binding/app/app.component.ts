@@ -10,4 +10,4 @@ export class AppComponent {
 
 public string="Two Way data Binding";
 }
-}
+

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http,Responce } from '@angular/http';
+import { Http, Response } from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -12,7 +12,7 @@ private _url="app/apidata/usersData.json";
 constructor(private _http:Http){};
 getusers(){
 return this._http.get(this._url)
-       .map((responce:Responce)=>responce.json())
+       .map((responce:Response)=>responce.json())
         .catch(this.errorHandler);
 }
 errorHandler(error){
